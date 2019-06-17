@@ -1,1 +1,1 @@
-worker: python Gamebot.py
+worker: python ayana_end.py
