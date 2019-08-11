@@ -65,7 +65,7 @@ async def on_message(message):
         await app.send_message(message.channel, "조용히 하고 방송이나 보러가랏, https://www.youtube.com/channel/UC7uKMg7lPdCp4Nm1tLesihQ")
     if message.content == "^명령어":
         embed = discord.Embed(title="명령어 목록", description="명령어 목록입니닷!", colour = discord.Colour.blue())
-    
+
         #embed.set_footer(text = "추가명령어는 토끼린에게 문의바람")
         dtime = datetime.datetime.now()
         #print(dtime[0:4]) # 년도
@@ -91,6 +91,8 @@ async def on_message(message):
 
     if message.content.startswith("ㅇㅅㅇ"):
         await app.send_message(message.channel, "ㅇㅅㅇ")
+    if message.content.startswith("^주홍정체"):
+        await app.send_message(message.channel, "53사단 125연대 3대대 10중대 일병 주홍"
 
     if message.content.startswith("^주사위"):
         roll = message.content.split(" ")
